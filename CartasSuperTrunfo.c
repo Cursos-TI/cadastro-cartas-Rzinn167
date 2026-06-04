@@ -18,6 +18,10 @@ int main() {
     float PIB2 = 899.45;
     int IDH1 = 50;
     int IDH2 = 55;
+    float DensidadePopulacional1 = Populacao1 / Area1;
+    float DensidadePopulacional2 = Populacao2 / Area2;
+    float PIBporCapital1 = PIB1 * 1000000000 / Populacao1;
+    float PIBporCapital2 = PIB2 * 1000000000 / Populacao2;
 
     printf("Carta 1: %s\n", Codigo1);
     printf("Cidade: %s\n", Cidade1);
@@ -25,6 +29,8 @@ int main() {
     printf("Área: %.2f km²\n", Area1);
     printf("PIB: %.2f bilhões\n", PIB1);
     printf("IDH: %d\n", IDH1);
+    printf("Densidade Populacional: %.2f habitantes/km²\n", DensidadePopulacional1);
+    printf("PIB per Capita: %.2f reais\n", PIBporCapital1);
     printf("\n");
 
     printf("Carta 2: %s\n", Codigo2);
@@ -33,6 +39,8 @@ int main() {
     printf("Área: %.2f km²\n", Area2);
     printf("PIB: %.2f bilhões\n", PIB2);
     printf("IDH: %d\n", IDH2);
+    printf("Densidade Populacional: %.2f habitantes/km²\n", DensidadePopulacional2);
+    printf("PIB per Capita: %.2f reais\n", PIBporCapital2);
 
 return 0;
 } 
